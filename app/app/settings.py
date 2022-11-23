@@ -116,12 +116,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STRIPE_PUBLIC_KEY = ''
-STRIPE_SECRET_KEY = ''
+STRIPE_PUBLIC_KEY = 'pk_test_51M6Ej2IkVvzoYKJlP7cxGD07g4WOGPK2mWxYwLy50LMdd7mdziv3Lka6LYJW9xvuDZPgI0qXTvnIgGQ271QfcYSQ00MTR9jnhv'
+STRIPE_SECRET_KEY = 'sk_test_51M6Ej2IkVvzoYKJlwttezUy0ZMJvU2Fl0x2UrCmBx2VHJWkYynzGLQUjAHt4iZH35rPgqZMsWwGn87Ku0FF7Qsfu00nLE7Foaa'
