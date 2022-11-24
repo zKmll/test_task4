@@ -1,0 +1,14 @@
+
+<p>Product List</p>
+    {% if product_list %}
+
+        {% for p in product_list %}
+          <p> {{ p.name }} </p>
+          <p>{{ p.description }}</p>
+            <a href="{% url 'detail' id=p.id %}" >Buy</a>
+                
+        {% endfor %}
+
+    {% else %}
+      <p>The product list is empty.</p>
+    {% endif %}
